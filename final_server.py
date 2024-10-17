@@ -283,6 +283,7 @@ def predict_week9():
             })
         else:
             predictions = [predictions_short[0]]
+        app.logger.debug(predictions)    
         return jsonify(predictions)
     #box.cls[0].item()
 #name_to_id.get(class_name, 'NA')
